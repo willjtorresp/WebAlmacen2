@@ -73,6 +73,14 @@ public class Material implements Serializable{
     public void setId_entrada(int id_entrada) {
         this.id_entrada = id_entrada;
     }
+
+    public String getMaterial() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setUMB(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

@@ -73,6 +73,10 @@ public class Remision implements Serializable{
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
+
+    public String getRemision() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

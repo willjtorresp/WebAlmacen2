@@ -62,6 +62,10 @@ public class Salidamaterial implements Serializable{
     public void setId_material(int id_material) {
         this.id_material = id_material;
     }
+
+    public int getSalidamaterial() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

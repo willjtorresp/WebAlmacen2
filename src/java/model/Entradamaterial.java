@@ -64,6 +64,14 @@ public class Entradamaterial implements Serializable{
     public void setId_material(int id_material) {
         this.id_material = id_material;
     }
+
+    public int getentradamaterial() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public int getEntradamaterial() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
