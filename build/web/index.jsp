@@ -13,5 +13,6 @@
     </head>
     <body>
         <h1>Hello World de nuevo!!!</h1>
+        <jsp:forward page="listarProd.jsp"></jsp:forward>
     </body>
 </html>
