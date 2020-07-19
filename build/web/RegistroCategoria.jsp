@@ -535,10 +535,10 @@
 
 						<div class="page-header">
 							<h1>
-								Gestionar los libros
+								Gestion de sistema
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-                                                                Lista de libros
+                                                                Componentes
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -558,18 +558,30 @@
 
 										<!-- div.dataTables_borderWrap -->
 										<div>
-                                                                                    <form action="CategoriaControl" method="post" class="form-horizontal">
+                                                                                    <form action="CategoriControl" method="post" class="form-horizontal">
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-3 control-label no-padding-right">
-                                                                                                Codigo:
+                                                                                                id_categoria:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="categoria" value="" placeholder="Categoria-categoria"/>
+                                                                                                <input type="text" name="id_categoria" value="" placeholder="id_categoria"/>
                                                                                         </div>
+                                                                                            </div>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                Categoria:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="Categoria" value="" placeholder="Nombre categoria"/>
+                                                                                        </div>
+                                                                                            </div>
                                                                                             <button class="btn btn-success" type="submit">
                                                                                                 <i class="fa fa-save"></i>
                                                                                                 Registrar
                                                                                             </button>
+                                                                                        <div>
+                                                                                            <%=(request.getAttribute("mensaje")!=null?request.getAttribute("mensaje"):"")%>
+                                                                                        </div>
                                                                                     </form>
 										</div>
 
