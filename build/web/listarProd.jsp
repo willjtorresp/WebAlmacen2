@@ -1,9 +1,3 @@
-<%-- 
-    Document   : ListarLibros
-    Created on : 18-feb-2018, 17:32:12
-    Author     : Christian Gámez
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -12,7 +6,7 @@
 		<meta charset="utf-8" />
 		<title>Gestión de libros</title>
 
-		<meta name="description" content="Christian Gámez Udemy" />
+		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
                 <%@include file="css.jsp" %>
