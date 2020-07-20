@@ -564,7 +564,7 @@
                                                                                                 id_entrada:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="id_entrada" value="" placeholder="id_entrada"/>
+                                                                                                <input type="text" name="id_entrada" value="" placeholder="id entrada"/>
                                                                                         </div>
                                                                                             </div>
                                                                                         <div class="form-group">
@@ -572,7 +572,7 @@
                                                                                                  Fecha entrada:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="Fecha entrada" value="" placeholder="Fecha entrada"/>
+                                                                                                <input type="text" name="fecha_entrada" value="" placeholder="Fecha entrada"/>
                                                                                         </div>
                                                                                             </div>
                                                                                         <div class="form-group">
@@ -580,7 +580,7 @@
                                                                                                  Cantidad:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="Cantidad" value="" placeholder="Cantidad"/>
+                                                                                                <input type="text" name="cantidad" value="" placeholder="Cantidad"/>
                                                                                         </div>
                                                                                             </div>
                                                                                         <div class="form-group">
@@ -588,7 +588,7 @@
                                                                                                  Id_material:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="Id_material" value="" placeholder="Id_material"/>
+                                                                                                <input type="text" name="id_material" value="" placeholder="id_material"/>
                                                                                         </div>
                                                                                             </div>
                                                                                             <button class="btn btn-success" type="submit">
