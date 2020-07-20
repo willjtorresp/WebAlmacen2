@@ -19,10 +19,11 @@ import model.Material;
 public class MaterialDao {
     public static boolean registrar(Material cat){
         try {
-            String SQL="INSERT INTO material(descripcion, UMB) VALUES(?, ?);";
+            String SQL="INSERT INTO material(descripcion, umb) VALUES(?, ?);";
             Connection con=conexion.conectar();
             PreparedStatement st=con.prepareStatement(SQL);
-            st.setString(1, cat.getMaterial());
+            st.setString(1, cat.getDescripcion());
+            //st.setString(2, cat.getUMB());
             if(st.executeUpdate()>0){
                 return true;
             }else{

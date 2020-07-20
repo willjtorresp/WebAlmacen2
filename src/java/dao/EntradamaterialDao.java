@@ -22,7 +22,8 @@ public class EntradamaterialDao {
             String SQL="INSERT INTO entradamaterial(fecha_entrada, cantidad) VALUES(?, ?);";
             Connection con=conexion.conectar();
             PreparedStatement st=con.prepareStatement(SQL);
-            st.setInt(1, cat.getEntradamaterial());
+            st.setString(1, cat.getFecha_entrada());
+            st.setInt(2, cat.getCantidad());
             if(st.executeUpdate()>0){
                 return true;
             }else{
@@ -36,7 +37,7 @@ public class EntradamaterialDao {
     
     public static ArrayList<Entradamaterial> listar(){
         try {
-            String SQL="SELECT * FROM Entradamaterial;";
+            String SQL="SELECT * FROM Entradamaterial";
             Connection con=conexion.conectar();
             PreparedStatement st=con.prepareStatement(SQL);
             //st.setString(1, cat.getCategoria());

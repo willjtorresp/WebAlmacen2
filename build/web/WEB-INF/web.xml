@@ -4,9 +4,17 @@
         <servlet-name>CategoriControl</servlet-name>
         <servlet-class>controller.CategoriControl</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EntradaMaterial</servlet-name>
+        <servlet-class>controller.EntradaMaterialControl</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CategoriControl</servlet-name>
         <url-pattern>/CategoriControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EntradaMaterial</servlet-name>
+        <url-pattern>/EntradaMaterial</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

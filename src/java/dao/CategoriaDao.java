@@ -5,6 +5,7 @@
  */
 package dao;
 
+import controller.EntradaMaterialControl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -56,6 +57,10 @@ public class CategoriaDao {
             return null;
         }
         
+    }
+
+    public static boolean registrar(EntradaMaterialControl c) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
