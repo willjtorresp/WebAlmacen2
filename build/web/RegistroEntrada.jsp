@@ -403,7 +403,7 @@
 							</li>
 
 							<li class="">
-								<a href="EntradaMaterial.jsp">
+								<a href="RegistroEntrada.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Entrada Material
 								</a>
@@ -558,7 +558,7 @@
 
 										<!-- div.dataTables_borderWrap -->
 										<div>
-                                                                                    <form action="EntradaMaterial" method="post" class="form-horizontal">
+                                                                                    <form action="EntradaControl" method="post" class="form-horizontal">
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-3 control-label no-padding-right">
                                                                                                 id_entrada:

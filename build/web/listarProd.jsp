@@ -403,7 +403,7 @@
 							</li>
 
 							<li class="">
-								<a href="EntradaMaterial.jsp">
+								<a href="RegistroEntrada.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Entrada material
 								</a>

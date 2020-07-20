@@ -5,20 +5,18 @@
  */
 package controller;
 
-import dao.EntradamaterialDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Entradamaterial;
 
 /**
  *
  * @author wtorr_000
  */
-public class EntradaMaterialControl extends HttpServlet {
+public class EntradaControl extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +35,10 @@ public class EntradaMaterialControl extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet EntradaMaterial</title>");            
+            out.println("<title>Servlet EntradaControl</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet EntradaMaterial at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet EntradaControl at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -72,23 +70,7 @@ public class EntradaMaterialControl extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String id_entrada=request.getParameter("id_entrada");
-        String fecha_entrada=request.getParameter("fecha_entrada");
-        String cantidad=request.getParameter("cantidad");
-        String id_material=request.getParameter("id_material");
-        
-        Entradamaterial c=new Entradamaterial();
-        c.setId_entrada(id_entrada);
-        c.setFecha_entrada(fecha_entrada);
-        c.setCantidad(cantidad);
-        c.setId_material(id_material);
-        
-        if(EntradamaterialDao.registrar(c)){
-            request.setAttribute("mensaje", "La entrada fue registrada");
-        } else {
-            request.setAttribute("mensaje", "La entrada NO fue registrada");
-        }
-        request.getRequestDispatcher("EntradaMaterial.jsp").forward(request, response);
+        processRequest(request, response);
     }
 
     /**
