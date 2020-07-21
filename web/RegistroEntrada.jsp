@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta charset="utf-8" />
-	<title>Entrada Material</title>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <meta charset="utf-8" />
+            <title>Entrada Material</title>
 
-	<meta name="description" content="W T" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+            <meta name="description" content="W T" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
         <%@include file="css.jsp" %>
 	</head>

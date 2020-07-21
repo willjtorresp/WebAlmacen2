@@ -5,6 +5,7 @@
  */
 package dao;
 
+import controller.CategoriControl;
 import controller.EntradaControl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -59,7 +60,7 @@ public class CategoriaDao {
         
     }
 
-    public static boolean registrar(EntradaControl c) {
+    public static boolean registrar(CategoriControl c) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
