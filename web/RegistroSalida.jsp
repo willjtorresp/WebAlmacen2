@@ -4,7 +4,7 @@
 	<head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta charset="utf-8" />
-	<title>Registro Categorias</title>
+	<title>Salida Materiales</title>
 
 	<meta name="description" content="W T" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -29,7 +29,7 @@
 					<a href="index.jsp" class="navbar-brand">
 						<small>
 							<i class="fa fa-book"></i>
-							Gestión de libros
+							Registro de salida
 						</small>
 					</a>
 				</div>
@@ -411,7 +411,7 @@
 								<b class="arrow"></b>
 							</li>
                                                         <li class="">
-								<a href="SalidaMaterial">
+								<a href="RegistroSalida.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Salida Material
 								</a>
@@ -561,18 +561,21 @@
                                                                                     <form action="SalidaControl" method="post" class="form-horizontal">
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-3 control-label no-padding-right">
-                                                                                                id_salida:
+                                                                                               Salida:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="id_salida" value="" placeholder="id_salida"/>
+                                                                                                <input type="text" name="salida" value="" placeholder="id_salida"/>
                                                                                         </div>
                                                                                             </div>
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-3 control-label no-padding-right">
-                                                                                                id_remision:
+                                                                                               Remision:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                    <input type="text" name="id_remision" value="" placeholder="Numero remision"/>
+                                                                                                    <select name="remision">
+                                                                                                    <option value="0">Seleccione remision</option>
+                                                                                                    <option></option>
+                                                                                                </select>       
                                                                                         </div>
                                                                                             </div>
                                                                                         <div class="form-group">
@@ -580,20 +583,39 @@
                                                                                                 Cantidad:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="cantidad" value="" placeholder="cantidad"/>
+                                                                                                <input type="text" name="Cantidad" value="" placeholder="cantidad"/>
                                                                                         </div>
                                                                                             </div>
                                                                                         <div class="form-group">
                                                                                             <label class="col-sm-3 control-label no-padding-right">
-                                                                                                id_material:
+                                                                                                Material:
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                    <input type="text" name="id_material" value="" placeholder="id_material"/>
+                                                                                                <select name="material">
+                                                                                                    <option value="0">Seleccione un material</option>
+                                                                                                    <option></option>
+                                                                                                </select>       
                                                                                         </div>
                                                                                             </div>
-                                                                                            <button class="btn btn-success" type="submit">
-                                                                                                <i class="fa fa-save"></i>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                Fecha salida:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                    <input type="text" name="fecha salida" value="" placeholder="2020-07-20"/>
+                                                                                        </div>
+                                                                                            </div>
+                                                                                            <button name="accion" class="btn btn-success" type="submit">
+                                                                                                <i class="fa"></i>
                                                                                                 Registrar
+                                                                                            </button>
+                                                                                            <button name="accion" class="btn btn-warning" type="submit">
+                                                                                                <i class="fa"></i>
+                                                                                                Actualizar
+                                                                                            </button>
+                                                                                        <button name="accion" class="btn btn-danger" type="submit">
+                                                                                                <i class="fa"></i>
+                                                                                                Eliminar
                                                                                             </button>
                                                                                         <div>
                                                                                             <%=(request.getAttribute("mensaje")!=null?request.getAttribute("mensaje"):"")%>

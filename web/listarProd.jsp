@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Gestión de libros</title>
+		<title>Gestión de sistema</title>
 
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -29,7 +29,7 @@
 					<a href="index.jsp" class="navbar-brand">
 						<small>
 							<i class="fa fa-book"></i>
-							Gestión de libros
+							Sistema SICAAB
 						</small>
 					</a>
 				</div>
@@ -405,13 +405,13 @@
 							<li class="">
 								<a href="RegistroEntrada.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Entrada material
+									Entrada Material
 								</a>
 
 								<b class="arrow"></b>
 							</li>
                                                         <li class="">
-								<a href="SalidaMaterial">
+								<a href="RegistroSalida.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Salida Material
 								</a>
@@ -536,10 +536,10 @@
 
 						<div class="page-header">
 							<h1>
-								Gestionar los libros
+								Gestion de sistema
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-                                                                Lista de libros
+                                                                Componentes
 								</small>
 							</h1>
 						</div><!-- /.page-header -->

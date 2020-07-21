@@ -411,7 +411,7 @@
 								<b class="arrow"></b>
 							</li>
                                                         <li class="">
-								<a href="SalidaMaterial">
+								<a href="RegistroSalida.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Salida Material
 								</a>

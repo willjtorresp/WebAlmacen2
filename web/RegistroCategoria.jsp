@@ -29,7 +29,7 @@
 					<a href="index.jsp" class="navbar-brand">
 						<small>
 							<i class="fa fa-book"></i>
-							Gestión de libros
+							Sistema SICAAB
 						</small>
 					</a>
 				</div>
@@ -411,7 +411,7 @@
 								<b class="arrow"></b>
 							</li>
                                                         <li class="">
-								<a href="SalidaMaterial">
+								<a href="RegistroSalida.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Salida Material
 								</a>
