@@ -2,23 +2,23 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta charset="utf-8" />
-		<title>Gestión de libros</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<title>Registro Categorias</title>
 
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="description" content="W T" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-                <%@include file="css.jsp" %>
+        <%@include file="css.jsp" %>
 	</head>
 
 	<body class="no-skin">
-		<div id="navbar" class="navbar navbar-default          ace-save-state">
-			<div class="navbar-container ace-save-state" id="navbar-container">
-				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
-					<span class="sr-only">Toggle sidebar</span>
+	<div id="navbar" class="navbar navbar-default          ace-save-state">
+	<div class="navbar-container ace-save-state" id="navbar-container">
+	<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+	<span class="sr-only">Toggle sidebar</span>
 
-					<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
 
 					<span class="icon-bar"></span>
 
@@ -394,7 +394,7 @@
 
 						<ul class="submenu">
 							<li class="active">
-								<a href="index.jsp">
+								<a href="index.jsp">									
 									<i class="menu-icon fa fa-caret-right"></i>
 									Listado menu
 								</a>
@@ -403,7 +403,7 @@
 							</li>
 
 							<li class="">
-								<a href="EntradaMaterial.jsp">
+								<a href="RegistroEntrada.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Entrada material
 								</a>
@@ -429,8 +429,7 @@
                                                         <li class="">
 								<a href="RegistroCategoria.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Registrar Categoría
-								</a>
+									Registrar Categoría								</a>
 
 								<b class="arrow"></b>
 							</li>
@@ -536,10 +535,10 @@
 
 						<div class="page-header">
 							<h1>
-								Gestionar los libros
+								Gestion de sistema
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-                                                                Lista de libros
+                                                                Componentes
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -552,137 +551,57 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<div class="table-header">
-											Resultados de libros registrados
+											Registro de Categorias
 										</div>
 
 										<!-- div.table-responsive -->
 
 										<!-- div.dataTables_borderWrap -->
 										<div>
-											<table id="dynamic-table" class="table table-striped table-bordered table-hover">
-												<thead>
-													<tr>
-														<th>ISBN</th>
-														<th>Titulo</th>
-														<th class="hidden-480">Autor</th>
+                                                                                    <form action="SalidaControl" method="post" class="form-horizontal">
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                id_salida:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="id_salida" value="" placeholder="id_salida"/>
+                                                                                        </div>
+                                                                                            </div>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                id_remision:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                    <input type="text" name="id_remision" value="" placeholder="Numero remision"/>
+                                                                                        </div>
+                                                                                            </div>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                Cantidad:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="cantidad" value="" placeholder="cantidad"/>
+                                                                                        </div>
+                                                                                            </div>
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                id_material:
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                    <input type="text" name="id_material" value="" placeholder="id_material"/>
+                                                                                        </div>
+                                                                                            </div>
+                                                                                            <button class="btn btn-success" type="submit">
+                                                                                                <i class="fa fa-save"></i>
+                                                                                                Registrar
+                                                                                            </button>
+                                                                                        <div>
+                                                                                            <%=(request.getAttribute("mensaje")!=null?request.getAttribute("mensaje"):"")%>
+                                                                                        </div>
+                                                                                    </form>
+										</div>
 
-														<th>
-															<i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
-															Fecha
-														</th>
-                                                                                                                <th>
-															
-															Editorial
-														</th>
-														<th class="hidden-480">Categoría</th>
-
-														<th></th>
-													</tr>
-												</thead>
-
-												<tbody>
-													<tr>
-
-														<td>
-														<a href="#">1254-3256-9856-652</a>
-														</td>
-														<td class="hidden-480">Introducción a desarrollo web con JSP</td>
-														<td>William Torres</td>
-
-														<td>2017-12-31</td>
-                                                                                                                <td><span class="label label-sm label-success">Planeta</span></td>
-                                                                                                                <td>
-															<span class="label label-sm label-success">Matemáticas</span>
-														</td>
-
-														<td>
-															<div class="hidden-sm hidden-xs action-buttons">
-																<a class="blue" href="#">
-																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
-																</a>
-
-																<a class="green" href="#">
-																	<i class="ace-icon fa fa-pencil bigger-130"></i>
-																</a>
-
-																<a class="red" href="#">
-																	<i class="ace-icon fa fa-trash-o bigger-130"></i>
-																</a>
-															</div>
-
-															<div class="hidden-md hidden-lg">
-																<div class="inline pos-rel">
-																	<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-																		<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-
-													
-													</tbody>
-												</table>
-											</div>
-
-											<div class="modal-footer no-margin-top">
-												<button class="btn btn-sm btn-danger pull-left" data-dismiss="modal">
-													<i class="ace-icon fa fa-times"></i>
-													Close
-												</button>
-
-												<ul class="pagination pull-right no-margin">
-													<li class="prev disabled">
-														<a href="#">
-															<i class="ace-icon fa fa-angle-double-left"></i>
-														</a>
-													</li>
-
-													<li class="active">
-														<a href="#">1</a>
-													</li>
-
-													<li>
-														<a href="#">2</a>
-													</li>
-
-													<li>
-														<a href="#">3</a>
-													</li>
-
-													<li class="next">
-														<a href="#">
-															<i class="ace-icon fa fa-angle-double-right"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
+										
 										</div><!-- /.modal-content -->
 									</div><!-- /.modal-dialog -->
 								</div>
@@ -698,7 +617,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							Christian Gámez &copy; 2017-2018
+							Sistema
 						</span>
 
 						&nbsp; &nbsp;
@@ -986,9 +905,8 @@
 				*/
 			
 			
-			}
+			})
 		</script>
 	</body>
 </html>
-
 

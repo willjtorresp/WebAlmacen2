@@ -18,15 +18,15 @@ import model.Entradamaterial;
  * @author wtorr_000
  */
 public class EntradamaterialDao {
-        public static boolean registrar(Entradamaterial cat){
+        public static boolean registrar(Entradamaterial ent){
         try {
-            String SQL="INSERT INTO entradamaterial(fecha_entrada) VALUES(?);";
+            String SQL="INSERT INTO entradamaterial(fecha_entrada) VALUES(?,?,?,?);";
             Connection con=conexion.conectar();
             PreparedStatement st=con.prepareStatement(SQL);
-            st.setInt(1, cat.getId_entrada());
-            st.setString(2, cat.getFecha_entrada());
-            st.setInt(3, cat.getCantidad());
-            st.setInt(4, cat.getId_material());
+            st.setInt(1, ent.getId_entrada());
+            st.setString(2, ent.getFecha_entrada());
+            st.setInt(3, ent.getCantidad());
+            st.setInt(4, ent.getId_material());
             if(st.executeUpdate()>0){
                 return true;
             }else{
@@ -61,8 +61,8 @@ public class EntradamaterialDao {
         }
         
     }
-  public static boolean registrar(EntradaControl e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+  //public static boolean registrar(EntradaControl e) {
+    //    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }   
-}
+//}
     
